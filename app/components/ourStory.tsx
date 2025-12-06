@@ -20,8 +20,8 @@ export default function OurStory() {
                 2025 – Born in a San Francisco Kitchen
               </h3>
               <p className="text-lg leading-relaxed">
-                It started with a late-night pour-over in a cramped Mission District apartment. Two coffee obsessives, tired of the same chain brews and fleeting farmers' market finds, asked: “What if coffee could be an adventure—here today, gone tomorrow?”
-              </p>
+                A true Vietnamese coffee pop-up by 2 kids growing up in Saigon, now wanting to share our culture with the world!              
+                </p>
               <p className="text-lg leading-relaxed">
                 We craved the ritual of specialty coffee without the routine. No fixed addresses. No endless menus. Just exceptional beans, hand-brewed in unexpected spots, creating moments that linger longer than the caffeine high.
               </p>
@@ -30,7 +30,7 @@ export default function OurStory() {
             <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
                 src="/videos/founders.mp4"
-                poster="/story/founders.jpg"
+                // poster="/story/founders.jpg"
               />
             </div>
           </FadeInSection>
@@ -39,8 +39,8 @@ export default function OurStory() {
           <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/alameda-pourover.mp4"
-                poster="/videos/alameda-pourover-poster.jpg"
+                src="/videos/reviewer.mp4"
+                // poster="/story/team3.jpg"
               />
             </div>
 
@@ -76,8 +76,8 @@ export default function OurStory() {
 
             <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/studioaurora-sep-acoustic.mp4"
-                poster="/videos/studioaurora-poster.jpg"
+                src="/videos/dj.mp4"
+                // poster="/story/line2.jpg"
               />
             </div>
           </FadeInSection>
@@ -86,8 +86,8 @@ export default function OurStory() {
           <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/bernal-blades-loop.mp4"
-                poster="/story/bernal-blades.jpg"
+                src="/videos/reviewer2.mp4"
+                // poster="/story/cheer.jpg"
               />
             </div>
 
@@ -123,8 +123,8 @@ export default function OurStory() {
 
             <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/valencia-encore.mp4"
-                poster="/videos/valencia-encore-poster.jpg"
+                src="/videos/reviewer3.mp4"
+                // poster="/story/birthday.jpg"
               />
             </div>
           </FadeInSection>
@@ -133,8 +133,8 @@ export default function OurStory() {
           <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/waverly-alley.mp4"
-                poster="/videos/waverly-poster.jpg"
+                src="/videos/scooter.mp4"
+                // poster="/story/big_team.jpg"
               />
             </div>
 
@@ -170,8 +170,8 @@ export default function OurStory() {
 
             <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/bay-nomads-montage.mp4"
-                poster="/story/bay-nomads.jpg"
+                src="/videos/nomads.mp4"
+                // poster="/story/2cups.jpg"
               />
             </div>
           </FadeInSection>

@@ -44,6 +44,7 @@ export default function VideoPlayer({ src, className = "", poster }: VideoPlayer
       loop
       muted
       playsInline
+      autoPlay       // ← REQUIRED FOR iPHONE!
       preload="metadata"
     />
   );

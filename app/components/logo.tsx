@@ -28,8 +28,16 @@ export default function Logo({ className, size = "lg" }: LogoProps) {
       /> */}
 
       {/* Optional third ultra-soft layer */}
-      <div className="absolute inset-0 -z-10 scale-[2] rounded-full bg-amber-600/20 blur-3xl" />
-
+    <div
+      className="
+        absolute inset-0 -z-10
+        rounded-full
+        bg-amber-500/25
+        blur-[40px]
+        scale-[1.4]
+        will-change-transform will-change-filter
+      "
+    />
       {/* Your crisp logo on top */}
       <img
         src="/nau-logo1.png"
