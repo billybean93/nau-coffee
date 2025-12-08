@@ -51,3 +51,5 @@ export default function Logo({ className, size = "sm" }: LogoProps) {
     </div>
   );
 }
+
+

@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',        // This is the magic line
-  trailingSlash: true,     // Helps GitHub Pages with routing
+  output: 'export',
   images: {
-    unoptimized: true      // GitHub Pages doesn’t support Next Image optimization
-  }
+    unoptimized: true,
+  },
+  // Remove basePath and assetPrefix - not needed on Netlify!
 };
-
-
 
 export default nextConfig;
