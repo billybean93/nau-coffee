@@ -5,7 +5,7 @@ type LogoProps = {
   size?: "sm" | "md" | "lg" | "xl";
 };
 
-export default function Logo({ className, size = "lg" }: LogoProps) {
+export default function Logo({ className, size = "sm" }: LogoProps) {
   const sizeMap = {
     sm: "w-48 md:w-56",
     md: "w-64 md:w-80",
@@ -34,7 +34,7 @@ export default function Logo({ className, size = "lg" }: LogoProps) {
         rounded-full
         bg-amber-500/25
         blur-[40px]
-        scale-[1.4]
+        scale-[1]
         will-change-transform will-change-filter
       "
     />

@@ -26,14 +26,15 @@ export default function CoffeeDrip() {
   }, []);
 
   return (
-    <div className="relative w-200 h-50 -mt-8 pointer-events-none overflow-hidden">
+    
+    <div className="relative w-100 h-50 -mt-8 pointer-events-none overflow-hidden">
       {drops.map((drop) => (
         <motion.div
           key={drop.id}
           className="absolute top-8 w-2.5 h-2 origin-top"
          style={{
             left: `${drop.x}%`,
-            top: "2.5rem",
+            top: "1rem",
             width: "10px",
             height: "16px",
             background: "linear-gradient(to bottom, #fef9f0, #fce5cd)",

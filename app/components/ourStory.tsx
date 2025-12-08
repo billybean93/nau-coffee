@@ -179,11 +179,13 @@ export default function OurStory() {
 
         {/* Closing tagline */}
         <FadeInSection className="mt-32 text-center">
-          <div className="inline-block px-12 py-6 bg-amber-900/20 border border-amber-800/50 rounded-full backdrop-blur-sm">
-            <span className="text-2xl text-amber-200 tracking-wider font-light">
-              We're not chasing permanence.<br />
-              <span className="text-amber-400 font-medium">We're crafting coffee that haunts your cup.</span>
-            </span>
+          <div className="inline-block">
+            <p className="text-xl md:text-2xl text-amber-200/50 font-light mb-3">
+              We're not chasing permanence.
+            </p>
+            <p className="text-2xl md:text-3xl text-amber-100 font-light italic">
+              We're crafting coffee that haunts your cup.
+            </p>
           </div>
         </FadeInSection>
       </div>

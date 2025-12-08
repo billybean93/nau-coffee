@@ -296,30 +296,32 @@ function buildMedia(folderName: string, files: string[]): MediaItem[] {
 
 // Define all your popups here - just list the files!
 const pastPopups: PopUp[] = [
-  {
-    date: "Sunday, November 22, 2025",
-    title: "On Waverly",
-    location: "Waverly, San Francisco",
-    partner: "Pop-up event",
-    media: buildMedia("waverly", [
-      "waverly1.jpg",
-      "reviewer.mp4",
-      "waverly2.jpg",
-      "waverly3.jpg",
-      "waverly4.jpg",
-      "waverly5.jpg",
-      "waverly6.jpg",
-      "founders.mp4",
-      "reviewer2.mp4"
-      
+
+   {
+    date: "Sunday, July 20, 2025",
+    title: "Sidestreet Pho",
+    location: "2304 Encinal Ave, Alameda",
+    partner: "Nau x @chanelbloomcoffee",
+    media: buildMedia("sidestreet", [
+      "sidestreet1.jpg",
+      "sidestreet2.jpg",
+      "sidestreet3.jpg",
+      "sidestreet4.jpg",
+      "sidestreet5.jpg",
+      "sidestreet6.jpg",
+      "sidestreet7.jpg",
+      "sidestreet8.mp4",
+      "sidestreet9.jpg",
+      "sidestreet10.jpg",
     ])
   },
+
   {
-    date: "Sunday, November 2, 2025",
+    date: "Sunday, November 7, 2025",
     title: "Studio Aurora",
     location: "302 Valencia St, San Francisco",
     partner: "Studio Aurora",
-    media: buildMedia("studio_aurora", [
+    media: buildMedia("studio_aurora1", [
 
 
       "studio1.jpg",
@@ -328,8 +330,38 @@ const pastPopups: PopUp[] = [
       "studio4.jpg",
       "studio5.jpg",
       "studio6.jpg",
+      "studio7.jpg",
+      "studio8.jpg",
+      "studio9.jpg",
+      "studio10.jpg",
+      "studio11.jpg",
+      "studio12.jpg",
+      "studio13.jpg",
+      "studio14.jpg",
+      "studio15.jpg",
+      "studio16.jpg",
+      "studio17.jpg",
+      "studio18.mp4",
+      "studio19.mp4",
+      "studio20.mp4",
+      "studio21.mp4",
+      "studio22.jpg",
+      "studio23.jpg",
+      "studio24.jpg",
+      "studio25.jpg",
+      "studio26.jpg",
+      "studio27.jpg",
+      "studio28.mp4",
+      "studio29.mp4",
+      "studio30.jpg",
+      "studio31.jpg",
+      "studio32.jpg",
+      "studio33.jpg",
+      "studio34.jpg",
+      "studio35.jpg",
+      "studio36.jpg",
 
-    ])
+  ])
   },
   {
     date: "Saturday, September 20, 2025",
@@ -343,12 +375,49 @@ const pastPopups: PopUp[] = [
       "bernal4.jpg",
       "bernal5.jpg",
       "bernal6.jpg",
-      "bernal1.mp4",
-      "bernal2.mp4",
+      "bernal1.jpg",
+      "bernal2.jpg",
+      "bernal3.jpg",
+      "bernal4.jpg",
+      "bernal5.jpg",
+      "bernal6.jpg",
+      "bernal7.jpg",
+      "bernal8.jpg",
+      "bernal9.jpg",
+      "bernal10.jpg",
+      "bernal7.jpg",
+      "bernal8.jpg",
+      "bernal9.jpg",
+      "bernal10.jpg",
+      "bernal11.jpg",
+      "bernal12.jpg",
+      "bernal13.jpg",
+      "bernal14.jpg",
+      "bernal15.jpg",
+      "bernal16.jpg",
+      "bernal17.jpg",
+      "bernal18.jpg",
+      "bernal19.jpg",
+      "bernal20.jpg",
+      "bernal21.jpg",
+      "bernal22.jpg",
+      "bernal23.jpg",
+      "bernal24.jpg",
+      "bernal25.jpg",
+      "bernal26.jpg",
+      "bernal27.jpg",
+      "bernal28.jpg",
+      "bernal29.mp4",
+      "bernal30.mp4",
+      "bernal31.mp4",
+      "bernal32.mp4",
+      "bernal33.mp4",
+      "bernal34.mp4",
     ])
   },
+    
   {
-    date: "Sunday, September 7, 2025",
+    date: "Every week!",
     title: "Abacus Row",
     location: "Mission District, San Francisco",
     partner: "@abacusrow.sf",
@@ -361,21 +430,61 @@ const pastPopups: PopUp[] = [
       "abacus6.jpg"
     ])
   },
+
+    
   {
-    date: "Sunday, July 20, 2025",
-    title: "Sidestreet Pho",
-    location: "2304 Encinal Ave, Alameda",
-    partner: "Nau x @chanelbloomcoffee",
-    media: buildMedia("sidestreet", [
-      "sidestreet1.jpg",
-      "sidestreet1.mp4",
-      "sidestreet2.mp4",
-      "sidestreet3.mp4",
-      "sidestreet4.mp4",
-      "sidestreet5.mp4",
-      "sidestreet6.mp4",
+    date: "Every week!",
+    title: "Abacus Row ",
+    location: "Mission District, San Francisco",
+    partner: "@abacusrow.sf",
+    media: buildMedia("abacus_row2", [
+      "abacus1.jpg",
+      "abacus2.jpg",
+      "abacus3.jpg",
+      "abacus4.jpg",
+      "abacus5.jpg",
+      "abacus6.jpg"
     ])
   },
+
+   
+  {
+    date: "Sunday, November 2, 2025",
+    title: "Studio Aurora",
+    location: "302 Valencia St, San Francisco",
+    partner: "Studio Aurora",
+    media: buildMedia("studio_aurora2", [
+
+
+      "studio1.jpg",
+      "studio2.jpg",
+      "studio3.jpg",
+      "studio4.jpg",
+      "studio5.jpg",
+      "studio6.jpg",
+
+    ])
+  },
+  {
+    date: "Sunday, November 22, 2025",
+    title: "On Waverly",
+    location: "Waverly, San Francisco",
+    partner: "On Waverly",
+    media: buildMedia("waverly", [
+      "waverly1.jpg",
+      "reviewer.mp4",
+      "waverly2.jpg",
+      "waverly3.jpg",
+      "waverly4.jpg",
+      "waverly5.jpg",
+      "waverly6.jpg",
+      "founders.mp4",
+      "reviewer2.mp4"
+      
+    ])
+  },
+
+ 
 ];
 
 // Main PastPopUps Component

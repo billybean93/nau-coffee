@@ -43,7 +43,7 @@ export default function Countdown() {
       </p>
 
       {/* Main countdown – pure minimal chic */}
-      <div className="flex gap-8 md:gap-12 text-amber-100">
+      <div className="flex gap-8 sm:gap-12 text-amber-100">
         <div className="text-center">
           <div className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
             {String(timeLeft.days).padStart(2, "0")}

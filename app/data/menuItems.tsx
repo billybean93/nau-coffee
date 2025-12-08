@@ -1,15 +1,9 @@
-import { StaticImageData } from "next/image";
 
-// If you end up using real imported images later:
-// import espressoImg from "@/public/menu/espresso.jpg";
-// etc.
-
-// For now using string paths (perfect for public folder)
 export type MenuItem = {
   name: string;
   description: string;
   price: string;
-  image: string; // or StaticImageData when you import them
+  image: string;
 };
 
 const menuItems: MenuItem[] = [
