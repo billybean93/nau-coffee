@@ -17,10 +17,10 @@ export default function OurStory() {
           <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 space-y-6 text-amber-100">
               <h3 className="text-3xl md:text-4xl font-bold text-amber-300">
-                2025 – Born in a San Francisco Kitchen
+                A true Vietnamese coffee pop-up by 2 kids growing up in Saigon, now wanting to share our culture with the world!
               </h3>
               <p className="text-lg leading-relaxed">
-                A true Vietnamese coffee pop-up by 2 kids growing up in Saigon, now wanting to share our culture with the world!              
+                We started this project in 2025 with one simple idea: make really good coffee and give people a cozy place to feel at home. 
                 </p>
               <p className="text-lg leading-relaxed">
                 We craved the ritual of specialty coffee without the routine. No fixed addresses. No endless menus. Just exceptional beans, hand-brewed in unexpected spots, creating moments that linger longer than the caffeine high.
@@ -29,8 +29,8 @@ export default function OurStory() {
 
             <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/founders.mp4"
-                // poster="/story/founders.jpg"
+                src="/story/founders.mp4"
+                
               />
             </div>
           </FadeInSection>
@@ -39,8 +39,8 @@ export default function OurStory() {
           <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/reviewer.mp4"
-                // poster="/story/team3.jpg"
+                src="/story/reviewer.mp4"
+                
               />
             </div>
 
@@ -49,132 +49,92 @@ export default function OurStory() {
                 July 20, 2025 – Sidestreet Pho, Alameda: The First Pour
               </h3>
               <p className="text-lg leading-relaxed">
-                We kicked off with a whisper—no billboards, just an IG story and a chalkboard sign outside a beloved pho spot on Encinal Ave. Partnering with Chanel Bloom Coffee, we served single-origin Ethiopian Yirgacheffe drips and Vietnamese-inspired cold brews.
+                We kicked off with a whisper—no billboards, just an IG story and a chalkboard sign outside a beloved pho spot on Encinal Ave. 
               </p>
               <p className="text-lg leading-relaxed">
-                By noon, the line snaked around the block. Locals swapped stories over our minimalist setup: one bar, two methods (pour-over and espresso), zero waste. We closed at 3pm, hearts full, knowing we'd sparked something rare.
+                By noon, the line snaked around the block. Locals swapped stories over our minimalist setup. We closed at 3pm, hearts full, knowing we'd sparked something rare.
               </p>
               <p className="text-amber-300 font-medium">
-                Proof: Temporary spaces brew the strongest connections.
+                Good coffee refuses to be rushed—we’re cool with that, and we hope you are too.
               </p>
             </div>
           </FadeInSection>
 
-          {/* September 2025 – Studio Aurora */}
-          <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 space-y-6 text-amber-100">
-              <h3 className="text-3xl md:text-4xl font-bold text-amber-300">
-                September 7, 2025 – Studio Aurora, SF: Art Meets Aroma
-              </h3>
-              <p className="text-lg leading-relaxed">
-                Nestled in the creative hum of San Francisco's Mission, our second pour unfolded at Studio Aurora—a sunlit space where local artists sketch and dream. Here, we debuted Colombian Supremo flights, paired with live acoustic sets and sketchbook-inspired cup sleeves.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Crowds lingered longer than our 11am-3pm window, capturing the alchemy of coffee and canvas. Whispers of "This is what SF needs more of" fueled our fire, as first-timers became evangelists via phone snaps and heartfelt tags.
-              </p>
-            </div>
-
-            <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
-              <VideoPlayer
-                src="/videos/dj.mp4"
-                // poster="/story/line2.jpg"
-              />
-            </div>
-          </FadeInSection>
-
-          {/* September 2025 – Bernal Cutlery */}
-          <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
-              <VideoPlayer
-                src="/videos/reviewer2.mp4"
-                // poster="/story/cheer.jpg"
-              />
-            </div>
-
-            <div className="space-y-6 text-amber-100">
-              <h3 className="text-3xl md:text-4xl font-bold text-amber-300">
-                September 20, 2025 – Bernal Cutlery: Sharp Edges, Softer Sips
-              </h3>
-              <p className="text-lg leading-relaxed">
-                Trading fog for Bernal Heights' sunny slopes, we set up amid gleaming blades and heirloom tools. This Saturday surprise featured Guatemalan Huehuetenango espressos, with demos on pairing brews to charcuterie—because great coffee cuts through the ordinary.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Knife enthusiasts traded tips with caffeine seekers, turning a tool shop into a communal hearth. By dusk, we'd etched our mark: not just a pop-up, but a memory forged in steel and steam.
-              </p>
-              <p className="text-amber-300 font-medium">
-                Where precision meets pour, magic brews.
-              </p>
-            </div>
-          </FadeInSection>
+      
 
           {/* November 2025 – Studio Aurora Return */}
           <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 space-y-6 text-amber-100">
               <h3 className="text-3xl md:text-4xl font-bold text-amber-300">
-                November 2, 2025 – Studio Aurora (Return), 302 Valencia St: Echoes of the First
+                A menu that says what it means
               </h3>
               <p className="text-lg leading-relaxed">
-                We couldn't resist circling back to Valencia Street's vibrant pulse, where our September magic still echoed. This Sunday encore brought Kenyan AA light roasts and cascara experiments, with guest baristas sharing origin tales under string lights.
-              </p>
+                Black coffee. Coffee with condensed milk. Coffee with egg foam. Coffee with pandan foam. Coffee with salted cream. Seasonal drinks.               
+                </p>
               <p className="text-lg leading-relaxed">
-                Familiar faces returned, toasting to the rarity of second chances. The air hummed with laughter and low notes from a vinyl spinner—proof that even nomads find homes in fleeting rituals.
+                That’s it. Short is honest. We’d rather nail a few things than be average at twenty.
               </p>
             </div>
 
             <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/reviewer3.mp4"
+                src="/story/4drinks.mp4"
                 // poster="/story/birthday.jpg"
               />
             </div>
           </FadeInSection>
 
-          {/* November 2025 – On Waverly */}
           <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <VideoPlayer
-                src="/videos/scooter.mp4"
+                src="/story/give-back.mp4"
                 // poster="/story/big_team.jpg"
               />
             </div>
 
             <div className="space-y-6 text-amber-100">
               <h3 className="text-3xl md:text-4xl font-bold text-amber-300">
-                November 22, 2025 – On Waverly: Alleyway Alchemy
+                We give back because it feels right
               </h3>
               <p className="text-lg leading-relaxed">
-                Our latest whisper: a Saturday hideaway in Chinatown's labyrinthine lanes, where Waverly Place meets mystery. We unveiled Sumatran Mandheling dark roasts, infused with subtle spice nods to the neighborhood's heritage—served from a pop-up cart under lantern glow.
+                Before Nau was even a dream, we were in line every week at Abacus Row with all of you. Pouring coffee there now, beside Viet & Canto and the community that raised us, feels like coming home 🥹❣️              
               </p>
               <p className="text-lg leading-relaxed">
-                Strangers became storytellers over shared sips, the fog rolling in like a curtain call. As 3pm approached, we packed up, leaving only empty cups and the echo of "When's next?"—the sweetest close.
+                Free Vietnamese coffee, kids drawing on tables, soft DJ vibes, tiny workshops, open-mic laughter in the sunlight. Every pop-up is our love letter to you.              
               </p>
               <p className="text-amber-300 font-medium">
-                In hidden corners, coffee reveals its secrets.
+                Thank you for waiting, for smiling, for being family ❤️.              
               </p>
             </div>
           </FadeInSection>
 
-          {/* The Pop-Up Philosophy – Final Montage */}
-          <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-amber-100 order-2 md:order-1">
-              <h3 className="text-3xl md:text-4xl font-bold text-amber-300">
-                Now – Nomads of the Brew
-              </h3>
-              <p className="text-lg leading-relaxed">
-                From Alameda's pho-scented streets to Waverly's lantern-lit whispers, we've hopped the Bay's hidden gems. Eight weeks max per spot, sourcing beans from ethical farms in Ethiopia, Colombia, Kenya, Guatemala, and Sumatra—roasted fresh in Oakland.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Our menu? Ever-evolving but simple: seasonal singles like Geisha flights, cascara tonics, and collab-infused specials. Partnerships with local artists, roasters, and shops keep it alive. No apps, no subscriptions—just show up, sip, and savor the now.
-              </p>
-            </div>
+         {/* The Pop-Up Philosophy – Final Montage */}
+        <FadeInSection className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 text-amber-100 order-2 md:order-1">
+            <h3 className="text-3xl md:text-4xl font-bold text-amber-300">
+              Right Now – Nomads of the Brew ☕
+            </h3>
+            
+            <p className="text-lg leading-relaxed">
+              We’ve been bouncing around the Bay like kids chasing the ice-cream truck — from the pho-steamy corners of Alameda to the twinkly lantern nights in Waverly. Never staying anywhere longer than 8 weeks, just long enough to make friends and drink way too much coffee.
+            </p>
+            
+            <p className="text-lg leading-relaxed">
+              Our beans come straight from small farms in Ethiopia, Colombia, Kenya, Guatemala, and Sumatra (places where the farmers actually get paid fairly). We roast them fresh every week in Oakland so everything tastes like it just woke up happy.
+            </p>
+            
+            <p className="text-lg leading-relaxed">
+              The menu changes whenever we feel like it, but it’s always chill: maybe a fancy Geisha flight one week, a fizzy cascara soda the next, or some wild collab pour-over with a local artist or roaster. No app, no membership, no nonsense—just walk in, grab a cup, and enjoy the moment with us.
+            </p>
+          </div>
 
-            <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
-              <VideoPlayer
-                src="/videos/nomads.mp4"
-                // poster="/story/2cups.jpg"
-              />
-            </div>
-          </FadeInSection>
+          <div className="order-1 md:order-2 relative aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
+            <VideoPlayer
+              src="/story/nomads.mp4"
+              // poster="/story/2cups.jpg"
+            />
+          </div>
+        </FadeInSection>
         </div>
 
         {/* Closing tagline */}
@@ -188,6 +148,22 @@ export default function OurStory() {
             </p>
           </div>
         </FadeInSection>
+
+        <div className="max-w-7xl mx-auto text-center">
+        <FadeInSection className="mt-24">
+            <p className="text-amber-300 text-lg">
+              Want Nau Coffee at your shop, event, or space?{" "}
+              <a
+                href="mailto:hello@naucoffee.co"
+                className="font-medium underline underline-offset-4 hover:text-amber-100 transition"
+              >
+                Let's make it happen
+              </a>
+              .
+            </p>
+          </FadeInSection>
+        </div>
+
       </div>
     </section>
   );

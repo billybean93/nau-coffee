@@ -607,19 +607,6 @@ export default function PastPopUps() {
               />
             ))}
           </div>
-
-          <FadeInSection className="mt-24">
-            <p className="text-amber-300 text-lg">
-              Want Nau Coffee at your shop, event, or space?{" "}
-              <a
-                href="mailto:hello@naucoffee.co"
-                className="font-medium underline underline-offset-4 hover:text-amber-100 transition"
-              >
-                Let's make it happen
-              </a>
-              .
-            </p>
-          </FadeInSection>
         </div>
       </section>
 
