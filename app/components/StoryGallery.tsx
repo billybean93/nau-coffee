@@ -147,7 +147,7 @@ export default function StoryGallery({
         />
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
         {popup.media.map((item, index) => (
           <button
             key={index}
@@ -158,7 +158,7 @@ export default function StoryGallery({
             aria-label={`Go to ${item.type} ${index + 1}`}
           />
         ))}
-      </div>
+      </div> */}
 
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2 text-white/80 text-sm flex items-center gap-2">
         <span>{currentIndex + 1} / {popup.media.length}</span>
