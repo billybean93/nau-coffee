@@ -1,13 +1,22 @@
 "use client"
 
-import { PopUp } from "../interface/popup";
-import { MediaItem } from "../interface/MediaItem";
-
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
+// Mock types for demo
+interface MediaItem {
+  type: 'image' | 'video';
+  src: string;
+}
 
-// StoryGallery Component
+interface PopUp {
+  title: string;
+  location: string;
+  date: string;
+  media: MediaItem[];
+}
+
+// StoryGallery Component with Preloading
 export default function StoryGallery({ 
   popup, 
   isOpen, 
@@ -20,6 +29,48 @@ export default function StoryGallery({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const [loadedMedia, setLoadedMedia] = useState<Set<number>>(new Set());
+
+  // Reset index when popup changes
+  useEffect(() => {
+    if (isOpen && popup) {
+      setCurrentIndex(0);
+      setLoadedMedia(new Set([0])); // Mark first item as loaded
+    }
+  }, [popup?.title, isOpen]);
+
+  // Preload adjacent media when index changes
+  useEffect(() => {
+    if (!popup || !isOpen) return;
+
+    const preloadIndices = [
+      currentIndex - 1,
+      currentIndex,
+      currentIndex + 1,
+      currentIndex + 2 // Preload 2 ahead for smoother experience
+    ].filter(i => i >= 0 && i < popup.media.length);
+
+    preloadIndices.forEach(index => {
+      const media = popup.media[index];
+      if (!media || loadedMedia.has(index)) return;
+
+      if (media.type === 'image') {
+        const img = new Image();
+        img.src = media.src;
+        img.onload = () => {
+          setLoadedMedia(prev => new Set(prev).add(index));
+        };
+      } else if (media.type === 'video') {
+        // Preload video metadata
+        const video = document.createElement('video');
+        video.src = media.src;
+        video.preload = 'metadata';
+        video.onloadedmetadata = () => {
+          setLoadedMedia(prev => new Set(prev).add(index));
+        };
+      }
+    });
+  }, [currentIndex, popup, isOpen, loadedMedia]);
 
   if (!isOpen || !popup) return null;
 
@@ -63,12 +114,12 @@ export default function StoryGallery({
 
   const handleClose = () => {
     setCurrentIndex(0);
+    setLoadedMedia(new Set());
     onClose();
   };
 
   const currentMedia = popup.media[currentIndex];
 
-  // Safety check - close gallery if no media
   if (!currentMedia || !popup.media || popup.media.length === 0) {
     return null;
   }
@@ -116,18 +167,28 @@ export default function StoryGallery({
             src={currentMedia.src} 
             alt={`${popup.title} - ${currentIndex + 1}`}
             className="w-full h-full object-contain"
+            loading="eager"
           />
         ) : (
           <video 
+            key={currentMedia.src}
             src={currentMedia.src}
             controls
             autoPlay
             loop
             playsInline
+            preload="auto"
             className="w-full h-full object-contain"
           >
             Your browser does not support the video tag.
           </video>
+        )}
+        
+        {/* Loading indicator */}
+        {!loadedMedia.has(currentIndex) && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+            <div className="w-8 h-8 border-4 border-white/30 border-t-white rounded-full animate-spin" />
+          </div>
         )}
       </div>
 
@@ -146,19 +207,6 @@ export default function StoryGallery({
           aria-label="Next media"
         />
       </div>
-
-      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
-        {popup.media.map((item, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition ${
-              index === currentIndex ? 'bg-white' : 'bg-white/40'
-            }`}
-            aria-label={`Go to ${item.type} ${index + 1}`}
-          />
-        ))}
-      </div> */}
 
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2 text-white/80 text-sm flex items-center gap-2">
         <span>{currentIndex + 1} / {popup.media.length}</span>
